@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bovenn.cloud.cat.sys.infra.AppAmapRepository">
+    <resultMap type="com.bovenn.cloud.cat.facade.vo.AppAmapVO" id="appAmapResultMap">
+          <id column="fd_id" property="id" />
+          <result column="fd_citycode" property="citycode" />
+          <result column="fd_adcode" property="adcode" />
+          <result column="fd_name" property="name" />
+          <result column="fd_center" property="center" />
+          <result column="fd_level" property="level" />
+          <result column="fd_areacode" property="areacode" />
+        <result column="fd_createDate" property="createDate" />
+        <result column="fd_updateDate" property="updateDate" />
+    </resultMap>
+
+    <!-- 根据主键ID查询AppAmap -->
+    <select id="selectDetailById" resultMap="appAmapResultMap" parameterType="java.lang.Integer">
+        SELECT *
+        FROM sys_app_amap
+        WHERE fd_id = #{_parameter}
+    </select>
+
+    <select id="selectPage" resultMap="appAmapResultMap" parameterType="java.util.Map">
+        SELECT * from sys_app_amap
+        WHERE 1=1
+        <if test="type != null and type !='' ">
+            and fd_type= #{type}
+            order by fd_createDate desc
+        </if>
+    </select>
+
+</mapper>

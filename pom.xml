@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <groupId>com.bovenn.cloud</groupId>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>cloud-cat</module>
+        <module>cloud-common-model</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.6.RELEASE</version>
+    </parent>
+    <!--<properties>-->
+        <!--&lt;!&ndash; BASE &ndash;&gt;-->
+        <!--<version.common.component>1.0-SNAPSHOT</version.common.component>-->
+        <!--<version.inject>1</version.inject>-->
+        <!--<version.persistence.api>1.0</version.persistence.api>-->
+        <!--<version.lombok>1.16.14</version.lombok>-->
+        <!--<version.swagger>1.5.6</version.swagger>-->
+        <!--<version.swagger.springfox>2.6.1</version.swagger.springfox>-->
+        <!--&lt;!&ndash; SPRING &ndash;&gt;-->
+        <!--<version.springframework.boot>1.5.3.RELEASE</version.springframework.boot>-->
+        <!--<version.cglib>2.2</version.cglib>-->
+        <!--<version.springboot.redis>1.4.1.RELEASE</version.springboot.redis>-->
+        <!--<version.springdata.redis>1.7.3.RELEASE</version.springdata.redis>-->
+        <!--&lt;!&ndash;SPRING CLOUD&ndash;&gt;-->
+        <!--<spring-cloud.version>Dalston.SR4</spring-cloud.version>-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--<version.jjwt>0.9.0</version.jjwt>-->
+        <!--&lt;!&ndash; DATABASE &ndash;&gt;-->
+        <!--<version.pagehepler>5.0.1</version.pagehepler>-->
+        <!--<version.mapper>3.4.0</version.mapper>-->
+        <!--<version.datasource.durid>1.0.26</version.datasource.durid>-->
+        <!--<version.springboot.mybatis>1.1.1</version.springboot.mybatis>-->
+        <!--<version.springboot.mybatis.mapper>1.1.1</version.springboot.mybatis.mapper>-->
+        <!--<version.springboot.mybatis.pagehelper>1.1.1</version.springboot.mybatis.pagehelper>-->
+        <!--<version.lombok>1.16.10</version.lombok>-->
+    <!--</properties>-->
+</project>
